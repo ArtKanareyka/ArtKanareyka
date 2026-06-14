@@ -1,101 +1,95 @@
 # Hi, I'm Artem 👋
 
-**Frontend Developer (Angular) · Full-Stack in personal projects (NestJS)**
+**Full-Stack Developer (Angular / NestJS)**
 
-📍 Moscow, Russia · Open to remote work worldwide · B2 English
+📍 Moscow · Open to remote; relocation considered case by case · B2 English
+
+[![Telegram](https://img.shields.io/badge/Telegram-@ArtKanareyka-2CA5E0?style=flat&logo=telegram&logoColor=white)](https://t.me/ArtKanareyka)
+[![Email](https://img.shields.io/badge/Email-2pizzakanareyka@gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:2pizzakanareyka@gmail.com)
 
 ---
 
 ## About Me
 
-Frontend developer with **5 years of commercial experience** building production-grade Angular applications — from module architecture and state management to performance optimization, component library migrations, code review, and mentoring.
-
-Alongside my main job, I run my own **full-stack products in production** (NestJS + Angular + PostgreSQL) — Telegram bots with real users and integrated payments, where I own the full cycle: architecture, backend, frontend, CI/CD, and monitoring.
-
-> **Honest note:** commercial experience is frontend (Angular); backend and DevOps come from my own production projects. No false expectations on interviews.
+Developer with **5 years of commercial frontend experience** in Angular plus production full-stack side projects built with NestJS + Angular. Frontend is my core strength (Angular, TypeScript, NgRx, RxJS); I develop backend skills (NestJS, PostgreSQL, Prisma) through production side projects with real users. Looking for a **frontend-focused role with room to grow into full-stack**.
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 Skills
 
-**Frontend**
-```
-Angular 14–21   TypeScript   RxJS   Signals   NgRx   SCSS   Tailwind CSS
-Chart.js   Storybook   GIS (Leaflet, MapLibre, OpenLayers)
-```
-
-**Backend (personal projects)**
-```
-NestJS 11   PostgreSQL   Prisma   REST API   WebSockets
-```
-
-**Integrations & DevOps**
-```
-Telegram Bot API (grammY)   YooKassa payments   JWT / OAuth
-Docker   GitHub Actions   GitLab CI   Sentry   Prometheus
-```
-
-**Testing & Tooling**
-```
-Jest (unit + E2E)   Jasmine / Karma   pnpm   Nx   Webpack   Vite
-```
+| Area | Technologies |
+|------|-------------|
+| **Languages** | TypeScript, JavaScript (ES2022+), HTML5, CSS3/SCSS, SQL |
+| **Frontend** | Angular 14–21, RxJS, Signals, NgRx (Store/Effects/Entity/Component Store), Angular Material, Taiga UI, PrimeNG, Tailwind CSS, Chart.js, Storybook |
+| **Backend** | Node.js, NestJS, REST API, WebSockets, Prisma ORM, PostgreSQL, JWT/OAuth |
+| **Testing** | Jest (unit + E2E), Jasmine, Karma |
+| **DevOps** | Docker, GitLab CI/CD, GitHub Actions, Sentry, Prometheus |
+| **Tooling** | Nx, pnpm, Webpack, Vite, Angular CLI, Git |
+| **Other** | GIS (Leaflet, MapLibre, OpenLayers), Telegram Bot API, YooKassa, i18n (Transloco) |
 
 ---
 
-## 💼 Work Experience
+## 💼 Experience
 
-### RVB (Wildberries) — Logistics Platform
-**Frontend Developer (Angular) · Middle+** | 2026 – Present
+### Wildberries (RWB) — Frontend Developer (Angular)
+**06/2026 – Present · Moscow**
 
-Enterprise monorepo of logistics web applications. Multi-tenant architecture: single codebase builds into multiple apps per country (Russia, Georgia, Turkey) and demo environments. Stack: Angular 21, Nx 22, NgRx, RxJS, Signals, GIS (Leaflet, MapLibre, OpenLayers, Turf), Centrifuge (realtime), Transloco (i18n), Jest + Spectator, GitLab CI.
+- Develop the frontend of logistics web applications in a large-scale Angular 21 / Nx monorepo with a **multi-tenant architecture** (one codebase built into apps for several countries).
+- Maps integration (Leaflet, MapLibre, OpenLayers), realtime via Centrifuge, i18n (Transloco), API codegen from Swagger.
+- Follow team standards: reuse of UI-kit components and shared libraries, design tokens, code review via GitLab MRs.
 
----
-
-### Inschooltech — Educational SaaS Platform
-**Frontend Developer** | July 2024 – April 2026 · 1 yr 9 mo
-
-SaaS for automating academic workflows in private schools. Stack: Angular 18–21, TypeScript, RxJS, Signals, NgRx, SCSS, Chart.js.
-
-- Designed and delivered **4 core product modules** end-to-end: role-based dashboards (admin / teacher / parent), mobile employee workspace, grade journal with custom criteria and auto-save, scheduling with filters and RBAC.
-- Led **migration from PrimeNG to in-house component library**.
-- Introduced **OnPush Change Detection** as team standard, eliminating memory leaks.
-- Conducted code reviews and mentored junior developers.
+**Stack:** Angular 21, Nx, NgRx, RxJS, Signals, Taiga UI (internal UI kit), GIS, Centrifuge, Transloco, Jest + Spectator, GitLab CI.
 
 ---
 
-### Bazovye Tekhnologii — Construction e-commerce (magazin.124bt.ru)
-**Frontend Developer** | May 2021 – July 2024 · 3 yr 2 mo
+### Inschooltech — Frontend Developer (Angular)
+**07/2024 – 04/2026 · 1 yr 9 mo**
 
-Stack: Angular 14–20, TypeScript, RxJS, NgRx, SCSS, Bootstrap, Nx.
+SaaS for automating academic workflows in private schools. One of the most active frontend contributors during my tenure.
 
-- Built a **reusable component library** for the website and online store.
-- Implemented an **interactive construction materials calculator**.
-- Set up **NgRx state management** across the application.
-- Integrated frontend with a CRM system and developed Webasyst plugins.
+- Designed and implemented **4 core product modules** end-to-end (UI architecture → release): role-based dashboards for 3 user roles, mobile staff workspace, grading journal with autosave, schedule with RBAC, CRUD planning modules with file uploads, analytics dashboards (Chart.js).
+- Participated in migrating the UI layer from **PrimeNG to an internal component library**.
+- Established **OnPush Change Detection** as a team standard, eliminating memory leaks; led systematic refactoring (pipe unification, extraction of duplicated logic).
+- Code review and mentoring of junior developers; REST + WebSocket integration with backend.
+
+**Stack:** Angular 18–21, TypeScript, RxJS, Signals, NgRx, SCSS, Chart.js, GitLab CI/CD.
 
 ---
 
-## 🚀 Personal Projects (Full-Stack · Production)
+### Bazovye Tekhnologii — Frontend Developer (Angular)
+**05/2021 – 07/2024 · 3 yr 2 mo**
 
-> Full ownership: architecture → backend → frontend → payments → CI/CD → monitoring
+E-commerce platform and corporate website for a construction company.
 
-**Stack:** NestJS 11 · PostgreSQL · Prisma · grammY · YooKassa · Jest · Docker · GitHub Actions · Angular 19–21 · pnpm + Nx monorepo
+- Built a **library of reusable components** for the website and online store.
+- Implemented user editing & filtering; an **interactive construction-materials cost calculator**.
+- Set up NgRx state management; integrated frontend with CRM; developed Webasyst plugins; optimized page load.
+
+**Stack:** Angular 14–20, TypeScript, RxJS, NgRx, SCSS, Bootstrap, Angular Material, Webpack, Vite, Nx.
+
+---
+
+## 🚀 Personal Projects — Telegram Bots (NestJS + Angular)
+**2024 – Present · Full production cycle: architecture → backend → frontend → payments → CI/CD → monitoring**
 
 ### 🏋️ Fitness Bot
-Subscription-based workout tracking bot with YooKassa payments. Peak audience **5,000+ users**. Full Jest coverage (unit + E2E).
+Subscription-based workout tracking · YooKassa payments · Peak audience **5,000+ users** · Full Jest coverage (unit + E2E).
 
 ### 🔐 VPN Bot
-Backend for VPN subscription management. ~100 MAU. Monitoring via Sentry + Prometheus, rate limiting, email notifications, health checks.
+VPN subscription backend · ~100 MAU · Sentry + Prometheus monitoring · rate limiting · email notifications · health checks.
 
 ### 📚 Ebook Bot
-Digital book marketplace: one-time payments, automatic delivery, user library management.
+E-book marketplace · one-time payments · automated delivery · user library management.
+
+All bots consolidated into a **single pnpm + Nx monorepo** with reusable libraries and shared design tokens.
+
+**Stack:** NestJS 11, PostgreSQL, Prisma, grammY, YooKassa, Jest, Docker, GitHub Actions, Angular 19–21.
 
 ---
 
-## 📬 Contact
+## 🌐 Languages
 
-[![Telegram](https://img.shields.io/badge/Telegram-@ArtKanareyka-2CA5E0?style=flat&logo=telegram&logoColor=white)](https://t.me/ArtKanareyka)
-[![Email](https://img.shields.io/badge/Email-2pizzakanareyka@gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:2pizzakanareyka@gmail.com)
+🇷🇺 Russian — Native    🇬🇧 English — B2 (Upper-Intermediate)
 
 ---
 
