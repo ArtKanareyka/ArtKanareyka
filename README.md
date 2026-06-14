@@ -19,7 +19,6 @@ Developer with **5 years of commercial frontend experience** in Angular plus pro
 
 | Area | Technologies |
 |------|-------------|
-| **Languages** | TypeScript, JavaScript (ES2022+), HTML5, CSS3/SCSS, SQL |
 | **Frontend** | Angular 14–21, RxJS, Signals, NgRx (Store/Effects/Entity/Component Store), Angular Material, Taiga UI, PrimeNG, Tailwind CSS, Chart.js, Storybook |
 | **Backend** | Node.js, NestJS, REST API, WebSockets, Prisma ORM, PostgreSQL, JWT/OAuth |
 | **Testing** | Jest (unit + E2E), Jasmine, Karma |
