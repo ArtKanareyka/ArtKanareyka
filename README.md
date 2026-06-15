@@ -11,7 +11,7 @@
 
 ## About Me
 
-Frontend Developer with **5 years of commercial experience** in Angular. I design and implement product modules using TypeScript, RxJS, and NgRx, handle performance optimization, component library migrations, code review, and mentoring. Currently working in a large Nx monorepo at Wildberries (logistics). Also running my own full-stack side projects on NestJS + Angular.
+Frontend Developer with **5 years of commercial experience** in Angular. I design and implement product modules using TypeScript, RxJS, and NgRx, handle performance optimization, component library migrations, code review, and mentoring. Currently working in a large Nx monorepo at Wildberries (logistics). Also running my own full-stack side projects (Angular + NestJS/Go). Looking to grow toward **full-stack / backend**.
 
 ---
 
@@ -23,10 +23,9 @@ Frontend Developer with **5 years of commercial experience** in Angular. I desig
 | **Testing** | Jest (unit + E2E), Jasmine, Karma |
 | **Tooling** | Nx, pnpm, npm, Webpack, Vite, Angular CLI, Git |
 | **DevOps** | Docker, GitLab CI/CD, GitHub Actions, Sentry, Prometheus |
-| **Backend (side projects)** | Node.js, NestJS, REST API, WebSockets, Prisma ORM, PostgreSQL, SQL |
+| **Backend (side projects)** | Go (net/http, pgx, sqlc), Node.js, NestJS, REST API, WebSockets, Prisma, PostgreSQL, SQL |
 | **Other** | GIS (Leaflet, MapLibre, OpenLayers), Telegram Bot API, YooKassa, i18n (Transloco), JWT/OAuth |
 | **AI Tools** | Claude / Claude Code, Cursor, ChatGPT — daily use for codegen, refactoring, code review |
-| **Learning** | Go (Golang) |
 
 ---
 
@@ -68,24 +67,30 @@ E-commerce platform and corporate website for a construction company.
 
 ---
 
-## 🚀 Personal Projects — Full-Stack Web (NestJS + Angular)
+## 🚀 Personal Projects
 
+### 📱 Full-Stack Web (NestJS + Angular): Telegram Mini Apps, PWA, Bots
 **2024 – Present · Full production cycle: architecture → backend → frontend → payments → CI/CD → monitoring**
 
 Frontend delivered as Telegram Mini App, PWA, and public website (Angular); responsive layout, PWA offline mode.
 
-### 🏋 Fitness Bot
-Subscription-based workout tracking · YooKassa payments · Peak audience **5,000+ users** · Full Jest coverage (unit + E2E).
-
-### 🔒 VPN Bot
-VPN subscription backend · ~100 MAU · Sentry + Prometheus monitoring · rate limiting · email notifications · health checks.
-
-### 📚 Ebook Bot
-E-book marketplace · one-time payments · automated delivery · user library management.
+- **🏋 Fitness Bot** — subscription-based workout tracking · YooKassa payments · Peak audience **5,000+ users** · Full Jest coverage (unit + E2E).
+- **🔒 VPN Bot** — VPN subscription backend · ~100 MAU · Sentry + Prometheus monitoring · rate limiting · email notifications · health checks.
+- **📚 Ebook Bot** — e-book marketplace · one-time payments · automated delivery · user library management.
 
 All bots consolidated into a **single pnpm + Nx monorepo** with reusable libraries and shared design tokens.
 
 **Stack:** NestJS 11, PostgreSQL, Prisma, grammY, YooKassa, Jest, Docker, GitHub Actions, Angular 19–21.
+
+---
+
+### 📏 Taller (PWA) — Growth Forecast & Optimization: Go + Angular PWA
+**2025 – Present · Personal project**
+
+- Backend on **Go** (stdlib net/http, pgx, PostgreSQL, sqlc, golang-migrate): ~3,900 lines of code.
+- JWT auth + bcrypt, OAuth (Yandex ID, VK ID), email verification, growth forecast algorithm (Khamis–Roche); unit test coverage.
+- Frontend: **Angular 21 PWA** (standalone, zoneless, Signals) with offline mode.
+- Infrastructure: docker-compose, Caddy.
 
 ---
 
