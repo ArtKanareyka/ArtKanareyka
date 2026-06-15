@@ -86,10 +86,6 @@ All bots consolidated into a **single pnpm + Nx monorepo** with reusable librari
 
 ---
 
-## 🌐 Languages
-
-🇷🇺 Russian — Native    🇬🇧 English — B2 (Upper-Intermediate)
-
 ---
 
 *780+ contributions in the last year · Always building something in production*
