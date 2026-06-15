@@ -1,6 +1,6 @@
 # Hi, I'm Artem 👋
 
-**Full-Stack Developer (Angular / NestJS)**
+**Frontend Developer (Angular)**
 
 📍 Moscow · Open to remote; relocation considered case by case · B2 English
 
@@ -11,20 +11,22 @@
 
 ## About Me
 
-Developer with **5 years of commercial frontend experience** in Angular plus production full-stack side projects built with NestJS + Angular. Frontend is my core strength (Angular, TypeScript, NgRx, RxJS); I develop backend skills (NestJS, PostgreSQL, Prisma) through production side projects with real users. Looking for a **frontend-focused role with room to grow into full-stack**.
+Frontend Developer with **5 years of commercial experience** in Angular. I design and implement product modules using TypeScript, RxJS, and NgRx, handle performance optimization, component library migrations, code review, and mentoring. Currently working in a large Nx monorepo at Wildberries (logistics). Also running my own full-stack side projects on NestJS + Angular.
 
 ---
 
 ## 🛠 Skills
 
 | Area | Technologies |
-|------|-------------|
-| **Frontend** | Angular 14–21, RxJS, Signals, NgRx (Store/Effects/Entity/Component Store), Angular Material, Taiga UI, PrimeNG, Tailwind CSS, Chart.js, Storybook |
-| **Backend** | Node.js, NestJS, REST API, WebSockets, Prisma ORM, PostgreSQL, JWT/OAuth |
+|------|--------------|
+| **Frontend** | Angular 14–21, RxJS, Signals, NgRx (Store/Effects/Entity/Component Store), Angular Material, Taiga UI, PrimeNG, Tailwind CSS, Bootstrap, Chart.js, Storybook |
 | **Testing** | Jest (unit + E2E), Jasmine, Karma |
+| **Tooling** | Nx, pnpm, npm, Webpack, Vite, Angular CLI, Git |
 | **DevOps** | Docker, GitLab CI/CD, GitHub Actions, Sentry, Prometheus |
-| **Tooling** | Nx, pnpm, Webpack, Vite, Angular CLI, Git |
-| **Other** | GIS (Leaflet, MapLibre, OpenLayers), Telegram Bot API, YooKassa, i18n (Transloco) |
+| **Backend (side projects)** | Node.js, NestJS, REST API, WebSockets, Prisma ORM, PostgreSQL, SQL |
+| **Other** | GIS (Leaflet, MapLibre, OpenLayers), Telegram Bot API, YooKassa, i18n (Transloco), JWT/OAuth |
+| **AI Tools** | Claude / Claude Code, Cursor, ChatGPT — daily use for codegen, refactoring, code review |
+| **Learning** | Go (Golang) |
 
 ---
 
@@ -33,11 +35,9 @@ Developer with **5 years of commercial frontend experience** in Angular plus pro
 ### Wildberries (RWB) — Frontend Developer (Angular)
 **06/2026 – Present · Moscow**
 
-- Develop the frontend of logistics web applications in a large-scale Angular 21 / Nx monorepo with a **multi-tenant architecture** (one codebase built into apps for several countries).
-- Maps integration (Leaflet, MapLibre, OpenLayers), realtime via Centrifuge, i18n (Transloco), API codegen from Swagger.
+- Developing frontend for logistics web applications in a large-scale Angular 21 / Nx monorepo with a **multi-tenant architecture** (one codebase built into apps for several countries).
+- Stack: Angular 21, NgRx, RxJS, Signals, internal UI kit on top of Taiga UI, GIS (Leaflet, MapLibre, OpenLayers), realtime via Centrifuge, i18n (Transloco), API codegen from Swagger.
 - Follow team standards: reuse of UI-kit components and shared libraries, design tokens, code review via GitLab MRs.
-
-**Stack:** Angular 21, Nx, NgRx, RxJS, Signals, Taiga UI (internal UI kit), GIS, Centrifuge, Transloco, Jest + Spectator, GitLab CI.
 
 ---
 
@@ -68,13 +68,16 @@ E-commerce platform and corporate website for a construction company.
 
 ---
 
-## 🚀 Personal Projects — Telegram Bots (NestJS + Angular)
+## 🚀 Personal Projects — Full-Stack Web (NestJS + Angular)
+
 **2024 – Present · Full production cycle: architecture → backend → frontend → payments → CI/CD → monitoring**
 
-### 🏋️ Fitness Bot
+Frontend delivered as Telegram Mini App, PWA, and public website (Angular); responsive layout, PWA offline mode.
+
+### 🏋 Fitness Bot
 Subscription-based workout tracking · YooKassa payments · Peak audience **5,000+ users** · Full Jest coverage (unit + E2E).
 
-### 🔐 VPN Bot
+### 🔒 VPN Bot
 VPN subscription backend · ~100 MAU · Sentry + Prometheus monitoring · rate limiting · email notifications · health checks.
 
 ### 📚 Ebook Bot
@@ -83,8 +86,6 @@ E-book marketplace · one-time payments · automated delivery · user library ma
 All bots consolidated into a **single pnpm + Nx monorepo** with reusable libraries and shared design tokens.
 
 **Stack:** NestJS 11, PostgreSQL, Prisma, grammY, YooKassa, Jest, Docker, GitHub Actions, Angular 19–21.
-
----
 
 ---
 
