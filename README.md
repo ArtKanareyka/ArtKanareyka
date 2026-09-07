@@ -13,7 +13,7 @@
 
 Angular frontend engineer since 2021. I design and ship product modules in large **Nx monorepos** — TypeScript, Signals, RxJS, NgRx, internal UI kits, i18n. On my previous product I was the **#1 frontend contributor** (2,700+ commits, 38% of the repository). Currently in the logistics division at **Wildberries**, the largest e-commerce marketplace in Russia & CIS.
 
-On the side I build and run full-stack products with real users and payments (Angular + NestJS + PostgreSQL), including computer-vision and LLM-powered features. I use AI coding tools daily and maintain my own **Claude Code sub-agent pipeline** for planning, implementation and review.
+On the side I build and run full-stack products with real users and payments (Angular + NestJS + PostgreSQL), including computer-vision, image-generation and LLM-powered features. I use AI tooling daily: my own **Claude Code sub-agent pipeline** for planning, implementation and review, **OpenClaw** agents, and **local LLMs** on my own hardware.
 
 ---
 
@@ -25,7 +25,7 @@ On the side I build and run full-stack products with real users and payments (An
 | **Architecture** | Nx monorepos, standalone / zoneless, OnPush, design tokens, i18n (Transloco, custom runtime i18n), ESLint module boundaries, OpenAPI-first |
 | **Backend** | NestJS, Node.js, Prisma, PostgreSQL, MySQL, PHP 8, REST, WebSocket, JWT/OAuth, YooKassa, Telegram Bot API (grammY) |
 | **Tooling / DevOps** | Nx, pnpm, Vite, Webpack, Jest, Docker, GitLab CI/CD, GitHub Actions, Sentry, Prometheus |
-| **AI** | Claude Code (custom sub-agents & pipelines), Cursor, vision-LLM integration via OpenRouter, MediaPipe |
+| **AI** | Claude Code (custom sub-agents & pipelines), OpenClaw agents, local LLMs (Ollama, Qwen 3.x), ComfyUI / FLUX on own GPUs, whisper.cpp, vision-LLM via OpenRouter, MediaPipe |
 
 ---
 
@@ -100,9 +100,10 @@ Nx + pnpm monorepo: **9 apps, 22 shared libraries** (payments, auth, push, maile
 - **🔒 Kachalka VPN** — VPN service on 3X-UI/Xray · ~100 MAU · Sentry + Prometheus · rate limiting · health checks.
 - **🧾 White-label CRM for repair shops** — OpenAPI-first, intake → repair → handout, FIFO inventory, payroll, AI copilot and natural-language reports; Angular SSR marketing site.
 - Shared **YooKassa subscription engine**: idempotent confirm-in-transaction, grace periods, refunds, reconciliation.
-- Development runs through my own **Claude Code sub-agent pipeline**: planner, implementers, launch checks, reviewer, UX and visual QA.
+- **Self-hosted AI stack** for Kachalka: an **OpenClaw** agent gateway on a VPS drives the Telegram bots; exercise illustrations are generated in **ComfyUI (FLUX)** on two of my own GPU workstations (RTX 5070) behind a haproxy pool over Tailscale, with a reference-based pose pipeline and whisper.cpp voice transcription.
+- Development runs through my own **Claude Code sub-agent pipeline**: planner, implementers, launch checks, reviewer, UX and visual QA; **local LLMs** (Ollama, Qwen 3.x on Apple Silicon) for work that must stay off the cloud.
 
-**Stack:** NestJS 11, Prisma 6, PostgreSQL, grammY, Angular 22 (zoneless, SSR), Jest 30, Nx 23, Docker, GitHub Actions, Sentry, Prometheus.
+**Stack:** NestJS 11, Prisma 6, PostgreSQL, grammY, Angular 22 (zoneless, SSR), Jest 30, Nx 23, Docker, GitHub Actions, Sentry, Prometheus, OpenClaw, ComfyUI / FLUX, Ollama.
 
 ---
 
