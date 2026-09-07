@@ -13,7 +13,7 @@
 
 Angular frontend engineer since 2021. I design and ship product modules in large **Nx monorepos** — TypeScript, Signals, RxJS, NgRx, internal UI kits, i18n. On my previous product I was the **#1 frontend contributor** (2,700+ commits, 38% of the repository). Currently in the logistics division at **Wildberries**, the largest e-commerce marketplace in Russia & CIS.
 
-On the side I build and run full-stack products with real users and payments (Angular + NestJS/Go + PostgreSQL), including computer-vision and LLM-powered features. I use AI coding tools daily and maintain my own **Claude Code sub-agent pipeline** for planning, implementation and review.
+On the side I build and run full-stack products with real users and payments (Angular + NestJS + PostgreSQL), including computer-vision and LLM-powered features. I use AI coding tools daily and maintain my own **Claude Code sub-agent pipeline** for planning, implementation and review.
 
 ---
 
@@ -23,7 +23,7 @@ On the side I build and run full-stack products with real users and payments (An
 |------|--------------|
 | **Frontend** | Angular 14–22, TypeScript, Signals, RxJS, NgRx (Store/Effects/Entity/Component Store), Angular Material, Taiga UI, PrimeNG, Tailwind, Bootstrap, SCSS, Chart.js, Storybook, PWA, Capacitor |
 | **Architecture** | Nx monorepos, standalone / zoneless, OnPush, design tokens, i18n (Transloco, custom runtime i18n), ESLint module boundaries, OpenAPI-first |
-| **Backend** | NestJS, Node.js, Prisma, PostgreSQL, MySQL, Go (net/http, pgx, sqlc), PHP 8, REST, WebSocket, JWT/OAuth, YooKassa, Telegram Bot API (grammY) |
+| **Backend** | NestJS, Node.js, Prisma, PostgreSQL, MySQL, PHP 8, REST, WebSocket, JWT/OAuth, YooKassa, Telegram Bot API (grammY) |
 | **Tooling / DevOps** | Nx, pnpm, Vite, Webpack, Jest, Docker, GitLab CI/CD, GitHub Actions, Sentry, Prometheus |
 | **AI** | Claude Code (custom sub-agents & pipelines), Cursor, vision-LLM integration via OpenRouter, MediaPipe |
 
@@ -103,14 +103,6 @@ Nx + pnpm monorepo: **9 apps, 22 shared libraries** (payments, auth, push, maile
 - Development runs through my own **Claude Code sub-agent pipeline**: planner, implementers, launch checks, reviewer, UX and visual QA.
 
 **Stack:** NestJS 11, Prisma 6, PostgreSQL, grammY, Angular 22 (zoneless, SSR), Jest 30, Nx 23, Docker, GitHub Actions, Sentry, Prometheus.
-
----
-
-### 📏 Taller — growth forecast PWA (Go + Angular)
-**2025 – present**
-
-- Backend on **Go** (net/http, pgx, PostgreSQL, sqlc, golang-migrate; ~3,900 LOC): JWT + bcrypt, OAuth (Yandex ID, VK ID), email verification, Khamis–Roche forecast; unit tests.
-- Frontend: **Angular 21 PWA** (standalone, zoneless, Signals) with offline mode. Infra: docker-compose, Caddy.
 
 ---
 
