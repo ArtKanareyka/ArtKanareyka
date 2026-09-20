@@ -4,6 +4,7 @@
 
 📍 Remote · UTC+3 (overlaps EU and US East) · English C1
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-artkanareyka-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/artkanareyka)
 [![Telegram](https://img.shields.io/badge/Telegram-@ArtKanareyka-2CA5E0?style=flat&logo=telegram&logoColor=white)](https://t.me/ArtKanareyka)
 [![Email](https://img.shields.io/badge/Email-2pizzakanareyka@gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:2pizzakanareyka@gmail.com)
 
@@ -13,7 +14,7 @@
 
 Senior frontend engineer, in Angular since 2021. I design and ship product modules in large **Nx monorepos** — TypeScript, Signals, RxJS, NgRx, internal UI kits, i18n. On my previous product I was the **#1 contributor** with 2,735 commits — 38.1% of the whole repository. Currently in the logistics division at **Wildberries**, the largest e-commerce marketplace in Eastern Europe (100M+ users).
 
-On the side I build and run full-stack products with real users and payments (Angular + NestJS + PostgreSQL), including computer-vision, image-generation and LLM-powered features. I use AI tooling daily: my own **Claude Code sub-agent pipeline** for planning, implementation and review, **OpenClaw** agents, and **local LLMs**.
+On the side I build and run full-stack products with real users and payments (Angular + NestJS + PostgreSQL), including computer-vision, image-generation and LLM-powered features. I use AI tooling daily: my own **Claude Code sub-agent pipeline** for planning, implementation and review, **OpenClaw** agents, and **local LLMs** (Ollama, Qwen).
 
 ---
 
@@ -21,11 +22,12 @@ On the side I build and run full-stack products with real users and payments (An
 
 | Area | Technologies |
 |------|--------------|
-| **Frontend** | Angular 14–22, TypeScript, Signals, RxJS, NgRx (Store/Effects/Entity/Component Store), Angular Material, Taiga UI, PrimeNG, Tailwind, Bootstrap, SCSS, Chart.js, Storybook, PWA, Capacitor |
-| **Architecture** | Nx monorepos, standalone / zoneless, OnPush, design tokens, i18n (Transloco, custom runtime i18n), ESLint module boundaries, OpenAPI-first |
-| **Backend** | NestJS, Node.js, Prisma, PostgreSQL, MySQL, PHP 8, REST, WebSocket, JWT/OAuth, YooKassa, Telegram Bot API (grammY) |
-| **Tooling / DevOps** | Nx, pnpm, Vite, Webpack, Jest, Docker, GitLab CI/CD, GitHub Actions, Sentry, Prometheus |
-| **AI** | Claude Code (custom sub-agents & pipelines), OpenClaw agents, local LLMs (Ollama, Qwen), ComfyUI / FLUX, whisper, vision-LLM via OpenRouter, MediaPipe |
+| **Frontend** | Angular 14–22, TypeScript, Signals, RxJS, NgRx (Store/Effects/Entity/Component Store), Angular Material, Taiga UI, PrimeNG, Tailwind, Bootstrap, SCSS, Chart.js, Storybook, PWA, Capacitor, Astro, Telegram Mini Apps |
+| **Architecture** | Nx monorepos, standalone / zoneless, OnPush, SSR, design tokens, i18n (Transloco, custom runtime i18n), ESLint module boundaries, OpenAPI-first, GIS (MapLibre, OpenLayers, Leaflet) |
+| **Backend** | NestJS, Node.js, Prisma, PostgreSQL, MySQL, PHP 8 (PDO), REST, WebSocket, JWT/OAuth, YooKassa, Telegram Bot API (grammY) |
+| **Tooling / DevOps** | Nx, pnpm, Vite, Webpack, Jest, Docker / Docker Compose, GitLab CI/CD, GitHub Actions, Sentry, Prometheus |
+| **Infra / self-hosting** | Linux VPS, Caddy, 3X-UI / Xray (VLESS + Reality), Tailscale, AdGuard Home, OpenWrt, shared hosting deploys (Beget) |
+| **AI** | Claude Code (custom sub-agents, pipelines, deploy agents), OpenClaw agents, local LLMs (Ollama, Qwen), OpenRouter, vision LLMs (Gemini), ComfyUI / FLUX, whisper, MediaPipe, prompt engineering |
 
 ---
 
@@ -82,6 +84,7 @@ AI analysis of face, hairstyle and outfit from a photo, daily checklist, progres
 - **Benchmarked 15 vision LLMs** for quality, variance, latency and cost; moved analysis to gemini-2.5-flash (~$0.0035 per analysis).
 - Rebuilt the scoring algorithm and live weekly leaderboard recount; custom runtime i18n with lazy-loaded locales.
 - Product decisions driven by metrics read straight from the production DB (paid conversion, retention, repeat payments).
+- Companion **Telegram bot for ebook sales** (TypeScript, Prisma, Docker Compose + nginx, Jest, GitHub Actions).
 
 **Stack:** Angular 22, Signals, MediaPipe, Chart.js, Capacitor, PHP 8, MySQL, YooKassa, OpenRouter (Gemini).
 
@@ -93,13 +96,31 @@ AI analysis of face, hairstyle and outfit from a photo, daily checklist, progres
 Nx + pnpm monorepo: **9 apps, 23 shared libraries** (payments, auth, push, mailer, observability, Telegram, LLM/STT), 115 spec files, product isolation enforced with ESLint module boundaries. 1,000 commits.
 
 - **🏋 Kachalka** — fitness bot + Mini App / PWA with Capacitor builds for iOS and Android · peak **5,000+ users** · YooKassa · Jest (unit + E2E).
-- **🔒 Kachalka VPN** — VPN service on 3X-UI/Xray · ~100 MAU · Sentry + Prometheus · rate limiting · health checks.
+- **🔒 Kachalka VPN** — VPN service on 3X-UI/Xray (VLESS + Reality) · ~100 MAU · Sentry + Prometheus · rate limiting · health checks.
 - **🧾 White-label CRM for repair shops** — OpenAPI-first, intake → repair → handout, FIFO inventory, payroll, AI copilot and natural-language reports; Angular SSR marketing site.
 - Shared **YooKassa subscription engine**: idempotent confirm-in-transaction, grace periods, refunds, reconciliation.
 - AI stack for Kachalka: an **OpenClaw** agent gateway for the Telegram bots, exercise illustration generation (**ComfyUI / FLUX**), voice transcription (whisper).
-- Development runs through my own **Claude Code sub-agent pipeline**: planner, implementers, launch checks, reviewer, UX and visual QA; **local LLMs** (Ollama, Qwen) for work that must stay off the cloud.
+- Development runs through my own **Claude Code sub-agent pipeline**: planner, implementers, launch checks, reviewer, UX and visual QA, deploy agent for Docker Compose stacks; **local LLMs** (Ollama, Qwen) for work that must stay off the cloud.
 
 **Stack:** NestJS 11, Prisma 6, PostgreSQL, grammY, Angular 22 (zoneless, SSR), Jest 30, Nx 23, Docker, GitHub Actions, Sentry, Prometheus, OpenClaw, ComfyUI / FLUX, Ollama.
+
+---
+
+### 🏛 Intellect Club Vostok — website for a non-profit (client project)
+**2026 – in progress**
+
+Public website for a non-profit educational organization: content pages, 6 lead forms, service catalog with online payments, blog and events.
+
+- **Astro** static frontend + framework-free **PHP 8 / PDO / MySQL** API; migrations, Docker Compose for local dev.
+- **YooKassa** online payments for the service catalog; deploy script to shared hosting (Beget).
+- Built end-to-end with a Claude Code workflow: requirements analysis, architecture and work plan kept in the repo.
+
+**Stack:** Astro, TypeScript, pnpm, PHP 8, MySQL, YooKassa, Docker.
+
+---
+
+### 🧮 Smaller tools
+- [**savings-planner**](https://github.com/ArtKanareyka/savings-planner) — savings and capital forecast planner (income, expenses, indexation, rate cuts); runs fully in the browser, hosted on GitHub Pages.
 
 ---
 
