@@ -23,7 +23,7 @@ On the side I build and run full-stack products with real users and payments (An
 | Area | Technologies |
 |------|--------------|
 | **Frontend** | Angular 14–22, TypeScript, Signals, RxJS, NgRx (Store/Effects/Entity/Component Store), Angular Material, Taiga UI, PrimeNG, Tailwind, Bootstrap, SCSS, Chart.js, Storybook, PWA, Capacitor, Astro, Telegram Mini Apps |
-| **Architecture** | Nx monorepos, standalone / zoneless, OnPush, SSR, design tokens, i18n (Transloco, custom runtime i18n), ESLint module boundaries, OpenAPI-first, GIS (MapLibre, OpenLayers, Leaflet) |
+| **Architecture** | Nx monorepos, standalone / zoneless, OnPush, SSR, design tokens, i18n (Transloco, custom runtime i18n), ESLint module boundaries, OpenAPI / Swagger, GIS (MapLibre, OpenLayers, Leaflet) |
 | **Backend** | NestJS, Node.js, Prisma, PostgreSQL, MySQL, PHP 8 (PDO), REST, WebSocket, JWT/OAuth, YooKassa, Telegram Bot API (grammY) |
 | **Tooling / DevOps** | Nx, pnpm, Vite, Webpack, Jest, Docker / Docker Compose, GitLab CI/CD, GitHub Actions, Sentry, Prometheus |
 | **Infra / self-hosting** | Linux VPS, Caddy, 3X-UI / Xray (VLESS + Reality), Tailscale, AdGuard Home, OpenWrt, shared hosting deploys (Beget) |
@@ -79,7 +79,8 @@ E-commerce and corporate web for a construction company: reusable component libr
 
 AI analysis of face, hairstyle and outfit from a photo, daily checklist, progress tracking, leaderboard, PRO subscription. **13,800+ sign-ups, 221 active paid subscriptions** (YooKassa); paid conversion **1.30% → 2.02%** after a monetization change.
 
-- Migrated the live site from vanilla JS to **Angular 22** (standalone, zoneless, Signals; 142 components) while keeping the running PHP backend (27 REST endpoints) untouched.
+- Migrated the live site from vanilla JS to **Angular 22** (standalone, zoneless, Signals; 142 components) while keeping the running PHP backend (27 REST endpoints) untouched: shadow-ran the new app on a separate path of the live domain, then switched the root in Sep 2026. Trade-off: the API contract lives as a convention on both sides instead of OpenAPI, so no backend changes were needed for the switch.
+- **One-command releases with rollback**: frontend deploy with backup and 16 post-deploy checks; backend deploy 3-way-merges repo changes onto the live PHP files, lints, backs up and smoke-tests before going live.
 - **On-device face detection** in the browser with MediaPipe Tasks Vision.
 - **Benchmarked 15 vision LLMs** for quality, variance, latency and cost; moved analysis to gemini-2.5-flash (~$0.0035 per analysis).
 - Rebuilt the scoring algorithm and live weekly leaderboard recount; custom runtime i18n with lazy-loaded locales.
