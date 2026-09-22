@@ -1,8 +1,8 @@
 # Hi, I'm Artem 👋
 
-**Senior Frontend Engineer · Angular, TypeScript, RxJS, Nx · 5+ years · building full-stack products on the side**
+**Senior Frontend Engineer (Angular) · TypeScript, RxJS, NgRx, Signals, Nx · 5+ years · building full-stack products on the side**
 
-📍 Remote · UTC+3 (overlaps EU and US East) · English C1
+📍 Berlin, Germany (CET) · open to remote in EU / US · English C1
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-artkanareyka-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/artkanareyka)
 [![Telegram](https://img.shields.io/badge/Telegram-@ArtKanareyka-2CA5E0?style=flat&logo=telegram&logoColor=white)](https://t.me/ArtKanareyka)
@@ -36,7 +36,7 @@ On the side I build and run full-stack products with real users and payments (An
 ### Wildberries — Senior Frontend Engineer (Angular)
 **06/2026 – present · Logistics division · Remote**
 
-Angular 21 / Nx monorepo: 9 deployable apps for 5+ countries on 4 groups of shared libraries. 132 commits and 29 closed tickets in the first 3 months.
+Built and owned product modules in an Angular 21 / Nx monorepo: 9 deployable apps for 5+ countries on 4 groups of shared libraries. 132 commits and 29 closed tickets in the first 3 months.
 
 - Built the **vehicle repair-requests module** from scratch: registry with de-duplication, multi-step form (tractor + trailer), file attachments, draft autosave, step-by-step request card.
 - External logistics: trailer tracking and driver split on task cards, elapsed-time tracking in the task registry, route time-control timer.
@@ -53,11 +53,11 @@ Angular 21 / Nx monorepo: 9 deployable apps for 5+ countries on 4 groups of shar
 
 B2B SaaS for private schools and kindergartens. **#1 contributor** for the period: 2,735 commits, 38.1% of all repository commits (next contributor: 21.4%).
 
+- Led the codebase through major Angular upgrades **17 → 18 → 20 → 21**; migrated the repo from npm to **pnpm** with vulnerability remediation.
+- Established **OnPush** as the team standard (115 refactoring commits); code review and mentoring of 2 junior engineers.
 - Designed and shipped end-to-end **dashboards for three user roles** (parent, student, staff), including a mobile staff workspace.
 - Grading journal, schedule module, CRUD planning modules with file uploads, analytics dashboards (Chart.js with custom stacked-bar and doughnut components).
 - Migration of the UI layer from **PrimeNG to an internal component library** (6,500+ changes in the shared layer).
-- Led the codebase through major Angular upgrades **17 → 18 → 20 → 21**; migrated the repo from npm to **pnpm** with vulnerability remediation.
-- Established **OnPush** as the team standard; 115 refactoring commits; code review and mentoring of 2 junior engineers.
 
 **Stack:** Angular 17–21, TypeScript, RxJS, Signals, NgRx, SCSS, Chart.js, pnpm, GitLab CI/CD.
 
