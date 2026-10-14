@@ -14,7 +14,7 @@
 
 Senior frontend engineer, in Angular since 2021. I design and ship product modules in large **Nx monorepos** — TypeScript, Signals, RxJS, NgRx, internal UI kits, i18n. On my previous product I was the **#1 contributor** with 2,735 commits — 38.1% of the whole repository. Currently in the logistics division at **Wildberries**, the largest e-commerce marketplace in Eastern Europe (100M+ users).
 
-On the side I build and run full-stack products with real users and payments (Angular + NestJS + PostgreSQL), including computer-vision, image-generation and LLM-powered features. I use AI tooling daily: my own **Claude Code sub-agent pipeline** for planning, implementation and review, **OpenClaw** agents, and **local LLMs** (Ollama, Qwen).
+On the side I build and run full-stack products with real users and payments (Angular + NestJS + PostgreSQL), including computer-vision, image-generation and LLM-powered features. I use AI tooling daily: my own **multi-agent pipeline** (Pi CLI + Claude Code sub-agents) for planning, implementation and review, **OpenClaw** agents, and **local LLMs** (Ollama, Qwen).
 
 ---
 
@@ -27,7 +27,7 @@ On the side I build and run full-stack products with real users and payments (An
 | **Backend** | NestJS, Node.js, Prisma, PostgreSQL, MySQL, PHP 8 (PDO), REST, WebSocket, JWT/OAuth, YooKassa, Telegram Bot API (grammY) |
 | **Tooling / DevOps** | Nx, pnpm, Vite, Webpack, Jest, Docker / Docker Compose, GitLab CI/CD, GitHub Actions, Sentry, Prometheus |
 | **Infra / self-hosting** | Linux VPS, Caddy, 3X-UI / Xray (VLESS + Reality), Tailscale, AdGuard Home, OpenWrt, shared hosting deploys (Beget) |
-| **AI** | Claude Code (custom sub-agents, pipelines, deploy agents), OpenClaw agents, local LLMs (Ollama, Qwen), OpenRouter, vision LLMs (Gemini), ComfyUI / FLUX, whisper, MediaPipe, prompt engineering |
+| **AI** | Pi CLI + Claude Code (custom sub-agents, pipelines, deploy agents), OpenClaw agents, local LLMs (Ollama, Qwen), OpenRouter, vision LLMs (Gemini), ComfyUI / FLUX, whisper, MediaPipe, prompt engineering |
 
 ---
 
@@ -82,7 +82,8 @@ AI analysis of face, hairstyle and outfit from a photo, daily checklist, progres
 - Migrated the live site from vanilla JS to **Angular 22** (standalone, zoneless, Signals; 142 components) while keeping the running PHP backend (27 REST endpoints) untouched: shadow-ran the new app on a separate path of the live domain, then switched the root in Sep 2026. Trade-off: the API contract lives as a convention on both sides instead of OpenAPI, so no backend changes were needed for the switch.
 - **One-command releases with rollback**: frontend deploy with backup and 16 post-deploy checks; backend deploy 3-way-merges repo changes onto the live PHP files, lints, backs up and smoke-tests before going live.
 - **On-device face detection** in the browser with MediaPipe Tasks Vision.
-- **Benchmarked 15 vision LLMs** for quality, variance, latency and cost; moved analysis to gemini-2.5-flash (~$0.0035 per analysis).
+- **Benchmarked 15 vision LLMs** for quality, variance, latency and cost; moved analysis to gemini-2.5-flash (~$0.0035 per analysis), with automatic provider fallback (OpenRouter → provod.ai) when a provider runs out of balance.
+- **Mock battles with an AI-filled opponent pool** — users always have someone to compete with on the leaderboard, even before the community grows.
 - Rebuilt the scoring algorithm and live weekly leaderboard recount; custom runtime i18n with lazy-loaded locales.
 - Product decisions driven by metrics read straight from the production DB (paid conversion, retention, repeat payments).
 - Companion **Telegram bot for ebook sales** (TypeScript, Prisma, Docker Compose + nginx, Jest, GitHub Actions).
@@ -94,14 +95,14 @@ AI analysis of face, hairstyle and outfit from a photo, daily checklist, progres
 ### 🏗 Foundry — Nx monorepo for four products
 **2026 – present · NestJS + Angular**
 
-Nx + pnpm monorepo: **9 apps, 23 shared libraries** (payments, auth, push, mailer, observability, Telegram, LLM/STT), 115 spec files, product isolation enforced with ESLint module boundaries. 1,000 commits.
+Nx + pnpm monorepo: **9 apps, 23 shared libraries** (payments, auth, push, mailer, observability, Telegram, LLM/STT), 115 spec files, product isolation enforced with ESLint module boundaries. 930+ commits.
 
 - **🏋 Kachalka** — fitness bot + Mini App / PWA with Capacitor builds for iOS and Android · peak **5,000+ users** · YooKassa · Jest (unit + E2E).
 - **🔒 Kachalka VPN** — VPN service on 3X-UI/Xray (VLESS + Reality) · ~100 MAU · Sentry + Prometheus · rate limiting · health checks.
 - **🧾 White-label CRM for repair shops** — OpenAPI-first, intake → repair → handout, FIFO inventory, payroll, AI copilot and natural-language reports; Angular SSR marketing site.
 - Shared **YooKassa subscription engine**: idempotent confirm-in-transaction, grace periods, refunds, reconciliation.
 - AI stack for Kachalka: an **OpenClaw** agent gateway for the Telegram bots, exercise illustration generation (**ComfyUI / FLUX**), voice transcription (whisper).
-- Development runs through my own **Claude Code sub-agent pipeline**: planner, implementers, launch checks, reviewer, UX and visual QA, deploy agent for Docker Compose stacks; **local LLMs** (Ollama, Qwen) for work that must stay off the cloud.
+- Development runs through my own **multi-agent pipeline (Pi CLI + Claude Code sub-agents)**: planner, implementers, launch checks, reviewer, UX and visual QA, deploy agent for Docker Compose stacks; **local LLMs** (Ollama, Qwen) for work that must stay off the cloud.
 
 **Stack:** NestJS 11, Prisma 6, PostgreSQL, grammY, Angular 22 (zoneless, SSR), Jest 30, Nx 23, Docker, GitHub Actions, Sentry, Prometheus, OpenClaw, ComfyUI / FLUX, Ollama.
 
