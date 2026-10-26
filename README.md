@@ -2,7 +2,7 @@
 
 **Senior Frontend Engineer (Angular) · TypeScript, RxJS, NgRx, Signals, Nx · 5+ years · building full-stack products on the side**
 
-📍 Berlin, Germany (CET) · open to remote in EU / US · English C1
+📍 Lisbon, Portugal (WET) · remote only in EU / US · English C1
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-artkanareyka--angular-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/artkanareyka-angular)
 [![Telegram](https://img.shields.io/badge/Telegram-@ArtKanareyka-2CA5E0?style=flat&logo=telegram&logoColor=white)](https://t.me/ArtKanareyka)
